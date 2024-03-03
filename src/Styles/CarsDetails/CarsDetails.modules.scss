@@ -1,0 +1,49 @@
+@use "../global/" as *;
+
+
+.CarDetails-section {
+    width: auto;
+    height: 100vh;
+    background: blue;
+}
+
+.container {
+    background: #000;
+    height: 100vh;
+}
+
+.carCard {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 30%;
+    text-align: center;
+    color: $text-black;
+    background: $yoyo-bg;
+    border-radius: 25px;
+
+    @media (max-width: 1000px) {
+        flex-wrap: wrap;
+        width: auto;
+    }
+
+    h1 {
+        font-size: $h2-size;
+        font-weight: 800;
+        font-size: $h1-size;
+    }
+
+    p {
+        font-weight: $p-weight;
+        font-style: normal;
+        font-size: $p-size;
+        line-height: 36px;
+    }
+
+    span {
+        font-weight: $p-weight;
+        font-size: $input-size;
+    }
+}
