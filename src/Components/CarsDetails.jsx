@@ -1,5 +1,8 @@
 import React from 'react';
 import CarCard from './CarCard';
+import SwitchSelector from './SwitchSelector';
+
+
 import '../Styles/CarsDetails/CarsDetails.modules.scss';
 
 import car1 from "../Images/car1.png"
@@ -10,11 +13,11 @@ import car3 from "../Images/car3.png"
 export default function CarDetails() {
     return (
         <section className="CarDetails-section">
-            <div className="container">
-                
+            <div className="container">            
                 <div className='car-txt'>
-                <h1>Simple pricing</h1>
-                <h2>Flexible costs to meet your budget</h2>
+                <h2>Simple pricing</h2>
+                <h3>Flexible costs to meet your budget</h3>
+                <SwitchSelector/>
                 </div>
 
                 <div className='cardpost'>

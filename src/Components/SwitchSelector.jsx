@@ -1,30 +1,41 @@
-import React, { useState } from 'react';
+'use client'
+import SwitchSelector from "react-switch-selector";
 import '../Styles/SwitchSelector/SwitchSelector.scss';
 
-export default function SwitchSelector({ onChange }) {
-    const [selectedOption, setSelectedOption] = useState("payAsYouGo");
-
-    const handleOptionChange = (option) => {
-        setSelectedOption(option);
-        if (onChange) {
-            onChange(option);
+export default function ToggleSwitch() {
+    const options = [
+        {
+            label: "Pay as you go",
+            value: {
+                foo: true
+            },
+            selectedBackgroundColor: "#FE3399",
+        },
+        {
+            label: "Subscription",
+            value: "Subscription",
+            selectedBackgroundColor: "#FE3399"
         }
+    ];
+
+    const onChange = (newValue) => {
+        console.log(newValue);
     };
 
+    const initialSelectedIndex = options.findIndex(({value}) => value === "Pay as you go");
+
     return (
-        <div className="switch-selector">
-            <button
-                className={selectedOption === "payAsYouGo" ? "active" : ""}
-                onClick={() => handleOptionChange("payAsYouGo")}
-            >
-                Pay As You Go
-            </button>
-            <button
-                className={selectedOption === "subscription" ? "active" : ""}
-                onClick={() => handleOptionChange("subscription")}
-            >
-                Subscription
-            </button>
-        </div>
+        <div className="switch-container"> 
+            <SwitchSelector
+                onChange={onChange}
+                options={options}
+                initialSelectedIndex={initialSelectedIndex}
+                backgroundColor={"#FFF2FB"}
+                fontColor={"#FE3399"}
+                selectedFontColor={"#fff"}
+                className="custom-switch-selector"
+            />
+            </div>
     );
-}
+  }
+

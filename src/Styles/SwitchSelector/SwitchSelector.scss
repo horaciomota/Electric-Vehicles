@@ -1,26 +1,24 @@
-.switch-selector {
+/* SwitchSelector.scss */
+
+.switch-container {
     display: flex;
-    justify-content: space-between;
-    width: 200px;
+    width: 50%;
+    height: 70px;
+    margin: 0 auto;
+    border-radius: 300px; /* ou qualquer valor que você preferir */
+    overflow: hidden;
+    margin-top: 3rem;
+    
+    @media (max-width: 1000px) {
+        width: 100%;
+    }
+  }
+  
+
+.custom-switch-selector {
+    margin-top: 1100px;
 }
 
-.switch-selector button {
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    font-size: 16px;
-    border-radius: 5px;
+.teste {
 }
-
-.switch-selector button.active {
-    background-color: #ff69b4; /* Rosa escuro */
-}
-
-.switch-selector button:not(.active) {
-    background-color: #ffb6c1; /* Rosa claro */
-}
-
-.switch-selector button:hover:not(.active) {
-    background-color: #ffa07a; /* Rosa mais claro quando hover */
-}
+  

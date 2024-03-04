@@ -7,18 +7,23 @@
 }
 
 .car-txt {
-    padding: 10rem;
+    padding: 3rem;
     text-align: center;
 
-    h1 {
-        font-weight: 800;
-        font-size: $h1-size;   
+    @media (max-width:1000px) {
+        padding: 0rem;
+        padding-bottom: 2rem;
     }
 
     h2 {
         font-weight: 800;
-        font-size: $h2-size;
-        font-weight: 100;   
+        font-size: $h2-size;   
+    }
+
+    h3 {
+        font-size: $h3-size;
+        font-weight: 100;
+        padding-top: 1rem;   
     }
 }
 
