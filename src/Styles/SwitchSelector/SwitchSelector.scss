@@ -1,0 +1,26 @@
+.switch-selector {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.switch-selector button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.switch-selector button.active {
+    background-color: #ff69b4; /* Rosa escuro */
+}
+
+.switch-selector button:not(.active) {
+    background-color: #ffb6c1; /* Rosa claro */
+}
+
+.switch-selector button:hover:not(.active) {
+    background-color: #ffa07a; /* Rosa mais claro quando hover */
+}
