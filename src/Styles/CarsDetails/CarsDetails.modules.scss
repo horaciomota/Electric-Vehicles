@@ -53,21 +53,6 @@
     background: $yoyo-bg;
     border-radius: 25px;
 
-    @media (max-width: 1200px) {
-        flex-wrap: wrap;
-        width: auto;
-    }
-
-    .carImage {
-        width: 100%;
-        height: auto;
-
-        @media (max-width: 1000px) {
-            width: auto;
-
-        }
-    }
-
     h1 {
         font-weight: 800;
         font-size: $car-txt-size;
@@ -76,24 +61,54 @@
     p {
         font-weight: $p-weight;
         font-size: $car-p-size;
-        line-height: 45px;
+        line-height: 30px;
+        border-bottom: 1px solid #e0e0e0;
+        padding-bottom: 4rem;
+        width: 100%;
     }
 
+    
     span {
         font-weight: $p-weight;
         font-size: $input-size;
     }
-
+    
     &.carCard1 {
         background-color: $yoyo-bg;
     }
-
+    
     &.carCard2 {
         background-color: $ami-bg;
     }
-
+    
     &.carCard3 {
         background-color: $twizy-bg;
+    }
+
+    @media (max-width: 1200px) {
+        flex-wrap: wrap;
+        width: auto;
+
+
+        h1 {
+            font-size: $h1-size;   
+        }
+
+        p{
+            font-weight: 300;
+            font-size: $p-size;
+            padding-bottom: 0rem;    
+        }
+        
+    }
+
+    .carImage {
+        width: 100%;
+        height: auto;
+
+        @media (max-width: 1000px) {
+            width: auto
+        }
     }
     
 }
