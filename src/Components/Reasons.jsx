@@ -1,3 +1,4 @@
+import '../Styles/Reason/Reason.modules.scss'
 import ReasonCard from "./ReasonCard";
 import reason1 from "../Images/reason1.png"
 import reason2 from "../Images/reason2.png"
@@ -9,6 +10,7 @@ function Reasons() {
         <>
         <div className="reasons-section">
             <div className="container">
+                <div className='reason-txt'>
                 <ReasonCard
                 imageUrl={reason1.src}
                 title="Feel electric"
@@ -26,6 +28,7 @@ function Reasons() {
                 title="Ultimately accessible"
                 text="Pick up and drop off vehicles at, or near to where you are staying, saving you time and money travelling to a rental location."
                 />
+            </div>
             </div>
         </div>
         </>
