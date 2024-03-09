@@ -8,9 +8,11 @@
 
 .logo {
     width: 90px;
+    margin-left: 10rem;
 
     @media (max-width: 1000px) {
         width: 60px;
+        margin-left: 0;
     }
 }
 
@@ -43,5 +45,32 @@
 }
 
 .menu-items li a:hover {
-    color: #ff69b4; /* Cor do texto ao passar o mouse */
+    color: $text-twizy; /* Cor do texto ao passar o mouse */
+}
+
+.qrcode-container {
+    margin-right: 10rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 1rem;
+    transform: rotate(5deg);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+    @media (max-width: 1000px) {
+        display: none;
+     }
+}
+
+.qrcode {
+    width: 100px;
+}
+
+.qrcode-label {
+    font-size: $input-size;
+    font-weight: 800;
+    color: $text-twizy;
+    text-align: center;
+    padding: 3px;
 }
