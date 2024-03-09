@@ -8,7 +8,7 @@ import Menu from './Menu';
 function Hero() {
     return ( 
         <>
-        <div className="Hero-section" style={{backgroundImage: `url(${herobg.src})`,}}>
+        <div className="Hero-section" style={{backgroundImage: `url(${herobg.src})`}}>
             <Menu/>
             <Hero1/>
             <Hero2/>
