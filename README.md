@@ -1,16 +1,11 @@
 
-![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
-
-
 # Electric Vehicles Website
 
 CurrentVehicles is a web application developed using Next.js and Sass, aimed at providing a convenient and eco-friendly solution for renting electric vehicles in Bermuda. The platform offers a fast, flexible, and cost-effective way for users to rent electric cars through a user-friendly web interface or mobile application.
 
 
-
 ## Screenshots
-
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![screenshot3](https://github.com/horaciomota/Electric-Vehicles/assets/8496232/04b1a081-d80a-42f8-844f-a81b755f5869)
 
 
 ## Features
@@ -46,6 +41,9 @@ Start the server
   npm run dev
 ```
 
+## App running
+
+https://github.com/horaciomota/Electric-Vehicles/assets/8496232/9a5ea9ce-adaf-474c-bfba-73bfe1382ea4
 
 ## Used Stack
 
