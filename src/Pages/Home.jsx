@@ -11,13 +11,13 @@ export default function Home() {
     return (
         <>
         <Hero/>
+        <StartToday/>
         <PinkWave/>
         <CarDetails/>
         <RideandRelax/>
         <Reasons/>
         <PurpleWave/>
         {/* <Follow/>  */}
-        <StartToday/>
         </>
     )
 }
