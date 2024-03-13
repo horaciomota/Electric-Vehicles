@@ -1,0 +1,107 @@
+@use "../global/" as *;
+
+.StartToday-section {
+    width: auto;
+    height: auto;
+    background: white;
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 4rem;
+
+        @media (max-width: 1000px) {
+            flex-direction: column; 
+        }
+    }
+
+    .Start-img {
+        flex: 1;
+        max-width: 100%;
+        object-fit: cover;
+        }
+
+    .Start-txt{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+        h1 {
+            font-size: $h1-size;
+            font-weight: 900;
+            color: #262642;
+        }
+
+        h2 {
+            font-size: $h2-size;
+            font-weight: 300;
+            color: $text-gray;
+        }
+
+        @media (max-width: 1000px) {
+
+            h1 {
+                font-size: $h2-size;
+            }
+
+            h2 {
+                font-size: $h3-size;
+            } 
+        }
+
+        .txt-list {
+            display: flex;
+            flex-direction: column;
+            gap: 5rem;
+            padding-top: 2rem;
+
+            .txt-group {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                gap: 4rem;
+
+                p {
+                    font-size: $p-size;
+                    font-weight: 200;
+                    text-align: left;
+                }
+
+                span {
+                    font-size: $h3-size;
+
+                    @media (max-width: 1000px) {
+                        font-size: $p-size;
+                    }
+                }            
+            }
+        }
+    }
+}
+
+.item1 {
+    color: #990066;
+    border-radius: 2rem;
+    font-weight: 800;
+    background: rgba(153, 0, 102, 0.2);
+    padding: 2rem 3rem;
+}
+
+.item2 {
+    color: #4A8DFF;
+    border-radius: 2rem;
+    font-weight: 800;
+    background: rgba(74, 141, 255, 0.2);
+    padding: 2rem 3rem;
+}
+
+.item3 {
+    color: #F5DF50;
+    border-radius: 2rem;
+    font-weight: 800;
+    background: rgba(245, 223, 80, 0.2);
+    padding: 2rem 3rem;
+}
