@@ -4,7 +4,8 @@
     width: auto;
     height: auto;
     background: white;
-    padding-top: 4rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
 
     .container {
         display: flex;
@@ -20,8 +21,17 @@
 
     .Start-img {
         flex: 1;
-        max-width: 100%;
+        max-width: 90%;
         object-fit: cover;
+
+
+        @media (max-width: 1000px) {
+
+                max-width: auto;
+                height: 10px;
+         
+        }
+
         }
 
     .Start-txt{
