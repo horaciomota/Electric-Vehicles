@@ -6,7 +6,9 @@
     padding-bottom: 4rem;
 
     .container {
-        height: 60vb;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     h1 {
@@ -33,12 +35,13 @@
     .footer-menu {
         display: flex;
         flex-direction: row;
-        align-items: end;
         justify-content: space-between;
+        align-items: center;
         font-weight: 500;
         color: #F5DF4D;
         font-size: $p-size;
         padding-top: 4rem;
+        gap: 10rem;
 
         .footer-list {
             display: flex;
@@ -48,6 +51,11 @@
 
         p {
             font-weight: 900;
+            transition: color 0.3s ease;
+        }
+
+        p:hover {
+            color: white;
         }
 
         .first-item {
@@ -74,3 +82,8 @@
     left: 0; /* Ajuste a posição horizontal (esquerda) conforme necessário */
 }
 
+@media (max-width: 1000px) {
+    .character-footer {
+        display: none;
+    }
+}
