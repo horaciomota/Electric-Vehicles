@@ -28,10 +28,10 @@ function StartToday() {
                     <p>Let your hair down. Everything is controlled through the app, from booking to billing allowing you to rent whenever, wherever.</p>  
                     </div>
                     <div className="buttons">
-                     <button className="getAppButton">
+                     <button className="getAppButton todayButton">
                     <img src={applestore.src} alt="Apple store"/> App Store
                     </button>
-                     <button className="getAppButton">
+                     <button className="getAppButton todayButton">
                      <img src={playstore.src} alt="Apple store"/> Play Store
                     </button>
                     </div>

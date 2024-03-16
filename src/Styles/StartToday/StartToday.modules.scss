@@ -88,6 +88,13 @@
             }
         }
     }
+
+    @media (max-width: 800px) {
+    .todayButton {
+        font-weight: 500;
+        font-size: $input-size;
+    }
+}
 }
 
 .item1 {
