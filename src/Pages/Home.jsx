@@ -6,6 +6,7 @@ import Reasons from "@/Components/Reasons"
 import PurpleWave from "@/Components/PurpleWave"
 import Follow from "@/Components/Follow"
 import StartToday from "@/Components/StartToday"
+import Footer from "@/Components/Footer"
 
 export default function Home() {
     return (
@@ -18,6 +19,7 @@ export default function Home() {
         <Reasons/>
         <PurpleWave/>
         <Follow/> 
+        <Footer/>
         </>
     )
 }

@@ -1,0 +1,76 @@
+@use "../global/" as *;
+
+.footer {
+    background: #262642;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    .container {
+        height: 60vb;
+    }
+
+    h1 {
+        font-size: $car-txt-size;
+        font-weight: 900;
+        color: #F5DF4D;
+        transition: color 0.3s ease;
+    }
+
+    h1:hover {
+        color: white;
+    }
+
+    @media (max-width: 1000px) {
+        h1 {
+            font-size: $h2-size;
+        }
+    
+        .container {
+            height: auto;
+        }
+    }
+
+    .footer-menu {
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+        justify-content: space-between;
+        font-weight: 500;
+        color: #F5DF4D;
+        font-size: $p-size;
+        padding-top: 4rem;
+
+        .footer-list {
+            display: flex;
+            flex-direction: row;
+            gap: 4rem;
+        }
+
+        p {
+            font-weight: 900;
+        }
+
+        .first-item {
+            order: -1; /* Define a ordem do primeiro item para -1, colocando-o à esquerda */
+        }
+
+        @media (max-width: 1000px) {
+
+            .footer-list {
+                display: none;
+                font-weight: 200;
+            }
+        }
+    }
+}
+
+.Footer-frame {
+    position: relative;
+}
+
+.footerline {
+    position: absolute; /* Define o posicionamento absoluto para o footerline */
+    bottom: 0; /* Ajuste a posição vertical (inferior) conforme necessário */
+    left: 0; /* Ajuste a posição horizontal (esquerda) conforme necessário */
+}
+
