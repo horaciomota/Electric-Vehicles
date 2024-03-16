@@ -1,4 +1,7 @@
 import '../Styles/StartToday/StartToday.modules.scss'
+
+import playstore from "../Images/play.png"
+import applestore from "../Images/Apple.png"
 import startpic from "../Images/start-pic.png"
 
 function StartToday() {
@@ -23,6 +26,14 @@ function StartToday() {
                     <div className='txt-group'>
                     <span className='item3'>3</span>
                     <p>Let your hair down. Everything is controlled through the app, from booking to billing allowing you to rent whenever, wherever.</p>  
+                    </div>
+                    <div className="buttons">
+                     <button className="getAppButton">
+                    <img src={applestore.src} alt="Apple store"/> App Store
+                    </button>
+                     <button className="getAppButton">
+                     <img src={playstore.src} alt="Apple store"/> Play Store
+                    </button>
                     </div>
                      </div>
                 </div>

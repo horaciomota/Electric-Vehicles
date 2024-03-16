@@ -23,16 +23,14 @@
         flex: 1;
         max-width: 90%;
         object-fit: cover;
+        border-radius: 2rem;
 
 
         @media (max-width: 1000px) {
-
                 max-width: auto;
-                height: 10px;
-         
+                height: 10px;   
         }
-
-        }
+    }
 
     .Start-txt{
         display: flex;
