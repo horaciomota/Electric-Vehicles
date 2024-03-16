@@ -17,7 +17,7 @@ export default function Home() {
         <RideandRelax/>
         <Reasons/>
         <PurpleWave/>
-        {/* <Follow/>  */}
+        <Follow/> 
         </>
     )
 }
