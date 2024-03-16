@@ -1,5 +1,8 @@
 @use "../global/" as *;
 
+.container {
+    width: auto;
+}
 
 .Follow-section {
     width: 100%;
@@ -35,16 +38,21 @@
 }
 
 .follow-img {
+    width: auto;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-top: 4rem;
 
-    @media (max-width: 1400px) {
-        flex-wrap: nowrap;
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    @media (max-width: 1200px) {
         flex-direction: column;
         gap: 3rem;
         padding-top: 2rem;
-
     }
 }
